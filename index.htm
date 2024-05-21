@@ -1,39 +1,133 @@
 <!DOCTYPE html>
-<!-- this tells computer that it is a website -->
-
-
-<html>
-
-<!-- head tag is where we set our character set, and create links/paths -->
-
+<html lang="en">
 <head>
-<!-- sets character set to Unicode -->
-  <meta charset = "utf-8">
- 
-<!-- links to css/path -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<!-- names our webpage -->
-  <title> My New Webpage </title>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
+/* Style the header */
+.header {
+  padding: 5px;
+  text-align: center;
+  background: rgb(40, 50, 95);
+  color: rgb(255, 255, 235);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 45px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(35, 40, 50);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 235);
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(120, 120, 140);
+  color: rgb(0, 0, 0);
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+
+/* main/left column */
+.main {
+  flex: 69.5%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.barrier{
+  flex: 0.5%;
+  background-color: rgb(35, 40, 50);
+}
+
+/* side/right column */
+.side {   
+  flex: 30%;
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: rgb(120, 120, 120);
+  width: 100%;
+  padding: 20px;
+}
+</style>
 </head>
-
 <body>
 
-  <header> head </header>
+<!-- Adds text to the main header block -->
+<div class="header">
+  <h1>WASTE</h1>
+  <p>Punawananga</p>
+</div>
 
-  <p> This is a webpage </p>
+<!-- Builds the navbar -->
+<div class="navbar">
+  <a href="#">text</a>
+  <a href="#">text</a>
+  <a href="#">text</a>
+  <a href="#" class="right">text</a>
+</div>
 
-  <h1> This is header one </h1>
-  <h2> This is header two </h2>
-
-  <div id="wrapper">
-  <header> site </header>
-  <nav> </nav>
-  <section> </section>
-  <footer> foot </footer>
+<!-- This adds all the information onto the sidebar and main blocks -->
+<div class="row">
+  <div class="main">
+    <h2>Purpose</h2>
+    <h5>The purpose of the Waste punawananga is to repurpose old or unused technology into new creations.</h5>
+    <h3>text</h3>
+  </div>
+  <div class="barrier">
+  </div>
+  <div class="side">
+    <h2>creation title</h2>
+    <h5>Title description, Jan 1, 2001</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>information about creation</p>
+    <br>
+    <h2>creation title</h2>
+    <h5>Title description, Feb 2, 2002</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>information about creation</p>
+  </div>
+</div>
 
 </body>
-<footer> foot two </footer>
-
 </html>
