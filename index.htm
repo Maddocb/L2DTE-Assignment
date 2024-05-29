@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>Home</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -55,12 +56,12 @@ body {
 }
 
 /* Column container */
-.row {  
+.container {  
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
+/* Create two unequal columns that sits next to each other, as well as a thin line to seperate them */
 
 /* main/left column */
 .main {
@@ -87,7 +88,17 @@ body {
   width: 100%;
   padding: 20px;
 }
+
+/*This creates a block at the bottom for additional information*/
+.base{
+  background-color: rgb(35, 40, 50);
+  flex: 100%;
+  padding: 10px;
+  color: rgb(255, 255, 235);
+  text-align: center;
+}
 </style>
+
 </head>
 <body>
 
@@ -99,14 +110,14 @@ body {
 
 <!-- Builds the navbar -->
 <div class="navbar">
-  <a href="#">text</a>
-  <a href="#">text</a>
-  <a href="#">text</a>
-  <a href="#" class="right">text</a>
+  <a href="index.htm">Home</a>
+  <a href="about.htm">About Us</a>
+  <a href="project.htm">Our Projects</a>
+  <a href="https://www.rhs.school.nz/" class="right"><img src="file:///C:/Users/madzb/OneDrive/Desktop/L2DTE/Images/logo.png" class="logo" alt="School Logo" width="48" height="16"></a>
 </div>
 
 <!-- This adds all the information onto the sidebar and main blocks -->
-<div class="row">
+<div class="container">
   <div class="main">
     <h2>Purpose</h2>
     <h5>The purpose of the Waste punawananga is to repurpose old or unused technology into new creations.</h5>
@@ -117,7 +128,10 @@ body {
   <div class="side">
     <h2>creation title</h2>
     <h5>Title description, Jan 1, 2001</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <!-- Replace fake image with actual image using the example below:
+    <img src="img_name.jpg" alt="name of image" width="100%" height="200">
+  -->
+    <img src="file:///C:/Users/madzb/OneDrive/Desktop/L2DTE/Images/img_grey.jpg" class="grey" alt="grey" width="100%" height="200">
     <p>Some text..</p>
     <p>information about creation</p>
     <br>
@@ -127,7 +141,10 @@ body {
     <p>Some text..</p>
     <p>information about creation</p>
   </div>
+<div class="base">
+  <h2>Contacts</h2>
+  <p>Phone: 021 010 1110</p>
+  <p>Email: <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a></p>
 </div>
-
 </body>
 </html>
