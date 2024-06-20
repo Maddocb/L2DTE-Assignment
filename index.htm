@@ -9,94 +9,6 @@
 * {
   box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  padding: 5px;
-  text-align: center;
-  background: rgb(40, 50, 95);
-  color: rgb(255, 255, 235);
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 45px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: rgb(35, 40, 50);
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: rgb(255, 255, 235);
-  text-align: center;
-  padding: 18px 24px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: rgb(120, 120, 140);
-  color: rgb(0, 0, 0);
-}
-
-/* Column container */
-.container {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other, as well as a thin line to seperate them */
-
-/* main/left column */
-.main {
-  flex: 69.5%;
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-}
-
-.barrier{
-  flex: 0.5%;
-  background-color: rgb(35, 40, 50);
-}
-
-/* side/right column */
-.side {   
-  flex: 30%;
-  background-color: rgb(230, 230, 230);
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: rgb(120, 120, 120);
-  width: 100%;
-  padding: 20px;
-}
-
-/*This creates a block at the bottom for additional information*/
-.base{
-  background-color: rgb(35, 40, 50);
-  flex: 100%;
-  padding: 10px;
-  color: rgb(255, 255, 235);
-  text-align: center;
-}
 </style>
 
 </head>
@@ -120,8 +32,8 @@ body {
 <div class="container">
   <div class="main">
     <h2>Purpose</h2>
-    <h5>The purpose of the Waste punawananga is to repurpose old or unused technology into new creations.</h5>
-    <h3>text</h3>
+    <h5>The purpose of the Waste punawananga is to introduce robotics and digital technology through the use of making repurposed, old or unused technology into new creations.</h5>
+    <h5>Our Puna group has been working to create various projects over this year that have been using recycled laptop screens, led lights, and vex v5 robotic equipment.</h3>
   </div>
   <div class="barrier">
   </div>
@@ -129,15 +41,15 @@ body {
     <h2>creation title</h2>
     <h5>Title description, Jan 1, 2001</h5>
     <!-- Replace fake image with actual image using the example below:
-    <img src="img_name.jpg" alt="name of image" width="100%" height="200">
+    <img src="image url" alt="name of image" width="350" height="200">
   -->
-    <img src="file:///C:/Users/madzb/OneDrive/Desktop/L2DTE/Images/img_grey.jpg" class="grey" alt="grey" width="100%" height="200">
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-ffc0286de75fce81ff4fce7ba476664a-lq" class="image" alt="computer">
     <p>Some text..</p>
     <p>information about creation</p>
     <br>
     <h2>creation title</h2>
     <h5>Title description, Feb 2, 2002</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <img src="file:///C:/Users/madzb/OneDrive/Desktop/L2DTE/Images/img_grey.jpg" class="image" alt="grey">
     <p>Some text..</p>
     <p>information about creation</p>
   </div>
