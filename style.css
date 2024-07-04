@@ -1,90 +1,117 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
   
-  /* Style the header */
-  .header {
-    padding: 5px;
-    text-align: center;
-    background: rgb(40, 50, 95);
-    color: rgb(255, 255, 235);
-  }
+/* Style the header */
+.header {
+  padding: 5px;
+  text-align: center;
+  background: rgb(40, 50, 95);
+  color: rgb(255, 255, 235);
+}
+
+.pageTitle{
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 40, 50);
+}
+.pageInformation{
+  padding: 40px
+}
+/*Blank space to fill up a page a bit*/
+.pagefiller{
+  height: 75px;
+  width: 100%;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 45px;
+}
   
-  /* Increase the font size of the h1 element */
-  .header h1 {
-    font-size: 45px;
-  }
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(35, 40, 50);
+}
   
-  /* Style the top navigation bar */
-  .navbar {
-    overflow: hidden;
-    background-color: rgb(35, 40, 50);
-  }
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 235);
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+}
   
-  /* Style the navigation bar links */
-  .navbar a {
-    float: left;
-    display: block;
-    color: rgb(255, 255, 235);
-    text-align: center;
-    padding: 18px 24px;
-    text-decoration: none;
-  }
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
   
-  /* Right-aligned link */
-  .navbar a.right {
-    float: right;
-  }
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(120, 120, 140);
+  color: rgb(0, 0, 0);
+}
   
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: rgb(120, 120, 140);
-    color: rgb(0, 0, 0);
-  }
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
   
-  /* Column container */
-  .container {  
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* Create two unequal columns that sits next to each other, as well as a thin line to seperate them */
   
-  /* Create two unequal columns that sits next to each other, as well as a thin line to seperate them */
+/* main/left column */
+.main {
+  flex: 69.5%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
   
-  /* main/left column */
-  .main {
-    flex: 69.5%;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-  }
+.barrier{
+  flex: 0.5%;
+  background-color: rgb(35, 40, 50);
+}
   
-  .barrier{
-    flex: 0.5%;
-    background-color: rgb(35, 40, 50);
-  }
+/* side/right column */
+.side {   
+  flex: 30%;
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+}
   
-  /* side/right column */
-  .side {   
-    flex: 30%;
-    background-color: rgb(230, 230, 230);
-    padding: 20px;
-  }
-  
-  /* Styles the image */
-  .image {
-    background-color: rgb(30,30,30);
-    color: rgb(255, 255, 235);
-    width: 275px;
-    height:175px;
-    padding: 3px;
-  }
-  
-  /*This creates a block at the bottom for additional information*/
-  .base{
-    background-color: rgb(35, 40, 50);
-    flex: 100%;
-    padding: 10px;
-    color: rgb(255, 255, 235);
-    text-align: center;
-  }
+
+
+/* Styles the image */
+.image {
+  background-color: rgb(30,30,30);
+  color: rgb(255, 255, 235);
+  width: 275px;
+  height:175px;
+  padding: 3px;
+}
+
+/*Styles the images of the projects */
+
+.project {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  flex: 1;
+  margin: 30px;
+}
+
+/*This creates a block at the bottom for additional information*/
+.base{
+  background-color: rgb(35, 40, 50);
+  flex: 100%;
+  padding: 10px;
+  color: rgb(255, 255, 235);
+  text-align: center;
+}
